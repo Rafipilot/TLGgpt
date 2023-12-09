@@ -8,8 +8,8 @@
   
     const qaPairs = [
       { question: 'What is your name?', answer: 'My name is TLGpt.' },
-      { question: '', answer: '' },
-      { question: '', answer: '' },
+      { question: 'Hello', answer: 'Hi' },
+      { question: 'Hi', answer: 'How can i help you' },
       { question: '', answer: '' },
       { question: '', answer: '' },
       { question: '', answer: '' },
@@ -20,9 +20,14 @@
       // Add more question-answer pairs as needed
     ];
   
+
+    
     const tokenizer = input => input.toLowerCase().split(/\s+/);
+    
 
 function processInput() {
+  console.log(userInput)
+  userInput = userInput.toLowerCase()
   const inputTokens = tokenizer(userInput);
 
   // Compare input with each question
@@ -31,7 +36,7 @@ function processInput() {
 
     // Check if input is similar to the question
     const similarityScore = similarity.compareTwoStrings(userInput, question);
-    if (similarityScore > 0.3) { // Adjust the threshold as needed
+    if (similarityScore > 0.1) { // Adjust the threshold as needed
       response = answer;
       return;
     }
@@ -41,9 +46,7 @@ function processInput() {
       response = 'Sorry, I don\'t understand.';
     }
   
-    onMount(() => {
-      // Example: Preload some data or perform any setup here
-    });
+ 
     </script>
   
     <style>
@@ -62,9 +65,9 @@ function processInput() {
     </style>
   
     <main>
-      <h1>Svelte AI App</h1>
-      <input bind:value={userInput} placeholder="Type your question" />
-      <button on:click={processInput}>Submit</button>
-      <p>{response}</p>
+      <h1>TLGpt</h1>
+      <input bind:value={userInput} placeholder="Ask a question" />
+      <button on:click={processInput}>Send</button>
+      <p>TLGpt: {response}</p>
     </main>
   
