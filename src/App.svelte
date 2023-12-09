@@ -37,7 +37,7 @@ function processInput() {
     }
   }
   
-      // No match found1
+      // No match found
       response = 'Sorry, I don\'t understand.';
     }
   
