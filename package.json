@@ -1,0 +1,29 @@
+{
+  "name": "my-svelte-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "svelte": "^4.2.3",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.14.0",
+    "body-parser": "^1.20.2",
+    "compromise": "^14.10.1",
+    "express": "^4.18.2",
+    "fuse.js": "^7.0.0",
+    "natural": "^6.10.4",
+    "nlp_compromise": "^7.0.0",
+    "nltk": "^0.0.1",
+    "sklearn": "^0.3.0",
+    "stopwords": "^0.0.9",
+    "string-similarity": "^4.0.4"
+  }
+}
