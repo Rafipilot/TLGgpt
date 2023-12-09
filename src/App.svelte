@@ -8,15 +8,15 @@
   
     const qaPairs = [
       { question: 'What is your name?', answer: 'My name is TLGpt.' },
-      { question: 'What is your name?', answer: '' },
-      { question: 'What is your name?', answer: '' },
-      { question: 'What is your name?', answer: '' },
-      { question: 'What is your name?', answer: '' },
-      { question: 'What is your name?', answer: '' },
-      { question: 'What is your name?', answer: '' },
-      { question: 'What is your name?', answer: '' },
-      { question: 'What is your name?', answer: '' },
-      { question: 'What is your name?', answer: '' },
+      { question: '', answer: '' },
+      { question: '', answer: '' },
+      { question: '', answer: '' },
+      { question: '', answer: '' },
+      { question: '', answer: '' },
+      { question: '', answer: '' },
+      { question: '', answer: '' },
+      { question: '', answer: '' },
+      { question: '', answer: '' },
       // Add more question-answer pairs as needed
     ];
   
@@ -37,7 +37,7 @@ function processInput() {
     }
   }
   
-      // No match found
+      // No match found1
       response = 'Sorry, I don\'t understand.';
     }
   
